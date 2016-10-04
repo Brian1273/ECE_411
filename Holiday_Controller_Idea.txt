@@ -1,0 +1,17 @@
+
+Kam Robertson
+October 2016
+Holiday Light Controller
+
+Use a microcontroller to control a relay that controls power to a holiday string lighting.
+Use a conventional plug strip and some metal seperation inside for the low voltage.
+Input a signal to the microcontroller via a debounced dc switch to select the theme.
+Output the signals to several transistors controlling several 5vdc 120vac 2amp relays (optocoupler?)
+The controller will then turn the relays on and off in several pleasing themes.
+Allow for manual shut down with the power off switch on the plug strip
+Provide power to the contoller and support hardware from 120vac
+
+I don't have a good small circuit worked out that has been tested to provide usable power from 120vac
+May need to use a pre-packaged power supply.
+
+This would be a nice practical holiday project.
