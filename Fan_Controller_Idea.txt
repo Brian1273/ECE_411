@@ -1,0 +1,17 @@
+
+Kam Robertson
+October 2016
+Bathroom Fan Controller
+
+Use a microcontroller to control a relay that controlls power to a bathroom fart fan.
+Input a signal to the microcontroller via a conventional 120v light switch (optocoupler)
+Output the signal to a transistor controlling the 5vdc 120vac 2amp relay (optocoupler?)
+The controller will then turn on the relay and begin a 20-30 minute countdown 
+to shut off of the relay and fan.  then do so.
+Allow for manual shut down of the relay via a second cyling of the light switch.
+Provide power to the contoller and support hardware from 120vac
+Put the whole thing on a tiny pcb with some led's to indicate life and labeled 14gauge wires hanging out
+Package it with nice thick adhesive shrink tube. (1000v rated)
+
+This would be a nice practical project that is installable and invisible in existing construction.
+I want at least several and know at least one other person who doea too!
