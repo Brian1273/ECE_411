@@ -1,0 +1,10 @@
+
+Kam Robertson
+October 2016
+Electronic Tuning Fork
+
+Use a microcontroller to output to a speaker or piezo buzzer a single tone in half steps through four octaves
+This seems tricky to me because the software and hardware will have to be tuned precisly,
+probably via some external potentiometers on analog inputs.
+Use a button or rotary switch to select the tone and display on a 3 digit display
+

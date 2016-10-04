@@ -1,0 +1,12 @@
+
+Kam Robertson
+October 2016
+Holiday Ornament or Trinket
+
+What holiday is complete without a theme shaped pcb with flahing lights and a piezo soundtrack?
+
+Use the microcontroller to flash as many led's as posible on a 9v battery in several pleasing 
+themes and play lovely piezo electric music to match.
+Add a safety pin and it is a perfect complement to the madatory sweater!
+
+This is the perfect cliche holiday project.
