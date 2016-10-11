@@ -1,0 +1,39 @@
+minimum quantities are probably more than 4 to ensure replacement parts (spares) are available.
+This is just the absolute minimum to build 4 units.
+
+From http://www.digikey.com:
+
+
+LM78L05 (price: $0.63 each, qty 4 required)
+--> LM78L05ACMX/NOPBTR-ND
+
+LM386  (price: $0.88 each, qty: 4 required)
+--> LM386MX-1/NOPBCT-ND
+
+PIC16F648A (price: $ 1.97 each, qty: 4 required)
+--> PIC16F648A-I/P-ND
+
+
+PIEZO BUZZER
+--> ???
+
+Power Supply
+--> 
+
+Programmer:
+PICkit3 (price:  $67.95 each, unknown quantity (at least 1))
+--> LPC1-PROMO-ND
+
+
+###########
+
+notes:
+
+Texas Instruments
+LM78LXX Series 3-Terminal Positive Regulators
+
+TI/National Semiconductor:
+LM386 Low Voltage Audio Power Amplifier
+
+LM386MX-1/NOPBCT-ND
+
