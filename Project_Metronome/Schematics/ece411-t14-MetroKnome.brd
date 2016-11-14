@@ -152,7 +152,7 @@
 <text x="46.228" y="10.541" size="1.016" layer="22" rot="MR0">SALY HAKKOUM</text>
 <text x="25.146" y="8.636" size="2.1844" layer="150">HERBERT_the_ROOSTER</text>
 <wire x1="0.01" y1="0" x2="67.056" y2="0" width="0" layer="20"/>
-<text x="25.3746" y="21.2598" size="0.6096" layer="21">100nF</text>
+<text x="25.3746" y="21.2598" size="0.6096" layer="21">10pF</text>
 <text x="25.4508" y="17.78" size="0.6096" layer="21">10pF</text>
 <text x="5.2832" y="19.7104" size="1.016" layer="21">-</text>
 <text x="59.6392" y="19.558" size="1.016" layer="21">-</text>
@@ -220,19 +220,19 @@
 <hole x="54.102" y="23.114" drill="1.6"/>
 <hole x="43.942" y="23.114" drill="1.6"/>
 <text x="18.034" y="1.397" size="1.016" layer="22" rot="MR180">PNP</text>
-<text x="17.653" y="13.716" size="1.016" layer="22" rot="MR0">NPN</text>
-<text x="33.401" y="21.844" size="0.6096" layer="22" rot="MR0">10uF</text>
+<text x="17.907" y="13.716" size="1.016" layer="22" rot="MR0">NPN</text>
+<text x="29.591" y="23.241" size="0.6096" layer="22" rot="MR0">10uF</text>
 <text x="28.321" y="3.556" size="0.6096" layer="22" rot="MR0">10uF</text>
-<text x="54.864" y="12.7" size="0.6096" layer="22" rot="MR0">10nF</text>
-<text x="54.864" y="9.652" size="0.6096" layer="22" rot="MR0">10nF</text>
-<text x="52.959" y="6.096" size="0.6096" layer="22" rot="MR180">10nF</text>
+<text x="52.832" y="14.097" size="0.6096" layer="22" rot="MR180">SW10nF</text>
+<text x="52.959" y="10.541" size="0.6096" layer="22" rot="MR180">CLK10nF</text>
+<text x="52.959" y="6.096" size="0.6096" layer="22" rot="MR180">DT10nF</text>
 <text x="23.368" y="2.159" size="0.6096" layer="22" rot="MR0">E</text>
 <text x="20.701" y="11.557" size="0.6096" layer="22" rot="MR0">E</text>
 <text x="20.828" y="13.208" size="0.6096" layer="22" rot="MR0">B</text>
 <text x="23.495" y="5.207" size="0.6096" layer="22" rot="MR0">B</text>
 <text x="23.495" y="3.81" size="0.6096" layer="22" rot="MR0">C</text>
 <text x="15.875" y="12.319" size="0.6096" layer="22" rot="MR0">C</text>
-<text x="28.702" y="17.399" size="0.6096" layer="22" rot="MR0">10k</text>
+<text x="32.766" y="18.796" size="0.6096" layer="22" rot="MR0">RA2_10k_BJT_RELAY</text>
 <text x="21.463" y="8.89" size="0.6096" layer="22" rot="MR0">1k</text>
 <text x="21.59" y="6.223" size="0.6096" layer="22" rot="MR0">1k</text>
 <text x="41.402" y="7.239" size="0.6096" layer="22" rot="MR0">1uF</text>
@@ -240,16 +240,16 @@
 <text x="24.257" y="11.43" size="0.6096" layer="22" rot="MR0">RX</text>
 <text x="24.257" y="9.017" size="0.6096" layer="22" rot="MR0">TX</text>
 <text x="24.765" y="6.477" size="0.6096" layer="22" rot="MR0">GND</text>
-<text x="59.69" y="15.748" size="0.6096" layer="22" rot="MR0">SWpullup10k</text>
-<text x="53.086" y="13.081" size="0.6096" layer="21">SW1k</text>
-<text x="21.209" y="16.383" size="0.6096" layer="22" rot="MR0">0.5k</text>
+<text x="57.658" y="16.383" size="0.6096" layer="22" rot="MR0">SWpullup10k</text>
+<text x="49.53" y="15.24" size="0.6096" layer="21">SW5k</text>
+<text x="18.161" y="17.907" size="0.6096" layer="22" rot="MR0">0.5k</text>
 <text x="10.541" y="16.002" size="0.6096" layer="22" rot="MR0">10uF</text>
 <text x="5.461" y="11.811" size="0.6096" layer="22" rot="MR0">GND</text>
 <text x="7.112" y="21.59" size="0.6096" layer="22" rot="MR0">GND</text>
-<text x="15.621" y="20.955" size="0.6096" layer="22" rot="MR0">GND</text>
+<text x="14.986" y="20.955" size="0.6096" layer="22" rot="MR0">GND</text>
 <text x="58.928" y="21.463" size="0.6096" layer="22" rot="MR0">GND</text>
 <text x="9.906" y="21.463" size="0.6096" layer="22" rot="MR0">POS</text>
-<text x="20.701" y="20.955" size="0.6096" layer="22" rot="MR0">POS</text>
+<text x="22.479" y="20.955" size="0.6096" layer="22" rot="MR0">POS</text>
 <text x="61.468" y="21.463" size="0.6096" layer="22" rot="MR0">POS</text>
 <text x="6.985" y="0.508" size="0.6096" layer="22" rot="MR0">GND</text>
 <text x="12.573" y="0.508" size="0.6096" layer="22" rot="MR0">+9V</text>
@@ -279,8 +279,8 @@
 <text x="13.589" y="12.7" size="0.6096" layer="21">10k</text>
 <text x="56.261" y="11.557" size="0.6096" layer="21">CLKpullup10k</text>
 <text x="56.261" y="8.128" size="0.6096" layer="21">DTpullup10k</text>
-<text x="53.086" y="9.398" size="0.6096" layer="21">CLK1k</text>
-<text x="53.213" y="5.461" size="0.6096" layer="21">DT1k</text>
+<text x="49.276" y="11.43" size="0.6096" layer="21">CLK5k</text>
+<text x="49.53" y="8.001" size="0.6096" layer="21">DT5k</text>
 <text x="31.369" y="13.081" size="0.508" layer="21">PIC16F648A</text>
 <text x="3.683" y="6.477" size="0.6096" layer="21">GND</text>
 <text x="3.81" y="14.351" size="0.6096" layer="21">GND</text>
@@ -290,13 +290,13 @@
 <text x="6.731" y="11.811" size="0.6096" layer="21">+5V</text>
 <text x="3.556" y="9.271" size="0.6096" layer="21">GND</text>
 <text x="3.683" y="11.811" size="0.6096" layer="21">GND</text>
-<text x="6.477" y="4.191" size="1.27" layer="21">0v</text>
-<text x="8.636" y="4.191" size="1.27" layer="21">+9v</text>
+<text x="6.477" y="4.191" size="0.8128" layer="21">GND</text>
+<text x="9.144" y="4.191" size="0.8128" layer="21">+9v</text>
 <text x="2.413" y="23.241" size="0.508" layer="21" rot="R270">ACORN ENERGY LLC  Ver2  ECE411  NOVERMBER2016</text>
 <text x="3.048" y="23.368" size="0.508" layer="22" rot="MR270">ACORN ENERGY LLC  Ver2  ECE411  NOVERMBER2016</text>
 <text x="21.717" y="21.844" size="1.9304" layer="22" rot="MR0">PIEZO</text>
-<text x="8.382" y="18.415" size="0.6096" layer="22" rot="MR0">RED</text>
-<text x="60.96" y="18.415" size="0.6096" layer="22" rot="MR0">GREEN</text>
+<text x="8.255" y="22.733" size="0.6096" layer="22" rot="MR0">RED</text>
+<text x="60.706" y="22.733" size="0.6096" layer="22" rot="MR0">GREEN</text>
 <text x="43.053" y="18.161" size="0.6096" layer="21">GND</text>
 <text x="45.72" y="18.161" size="0.6096" layer="21">+5V</text>
 <text x="48.387" y="18.161" size="0.6096" layer="21">SW</text>
@@ -313,7 +313,7 @@
 <text x="31.369" y="5.207" size="1.27" layer="21">^</text>
 <wire x1="30.607" y1="6.858" x2="33.02" y2="6.858" width="0.6096" layer="21"/>
 <wire x1="33.02" y1="6.858" x2="30.607" y2="6.858" width="0.6096" layer="22"/>
-<text x="17.653" y="6.985" size="1.016" layer="21">GND</text>
+<text x="18.161" y="6.985" size="1.016" layer="21">GND</text>
 <text x="19.05" y="9.525" size="1.016" layer="21">TX</text>
 <text x="19.05" y="12.065" size="1.016" layer="21">RX</text>
 <text x="28.067" y="12.065" size="0.6096" layer="21">1k</text>
@@ -330,8 +330,8 @@
 <text x="5.461" y="9.398" size="0.6096" layer="22" rot="MR0">GND</text>
 <text x="5.588" y="14.224" size="0.6096" layer="22" rot="MR0">GND</text>
 <text x="5.588" y="6.477" size="0.6096" layer="22" rot="MR0">GND</text>
-<text x="46.482" y="14.859" size="0.6096" layer="21">1k</text>
-<text x="46.482" y="11.557" size="0.6096" layer="21">1k</text>
+<text x="42.164" y="16.383" size="0.6096" layer="21">RED1k</text>
+<text x="42.164" y="13.081" size="0.6096" layer="21">GREEN1k</text>
 <text x="36.83" y="5.461" size="1.016" layer="21">PIC16F648A</text>
 <text x="47.371" y="16.129" size="1.016" layer="22" rot="MR0">T14 METROKNOME</text>
 <text x="47.371" y="15.494" size="0.4064" layer="22" rot="MR0">V2  ECE411  NOVEMBER2016</text>
@@ -352,7 +352,7 @@
 <text x="13.208" y="10.922" size="0.4064" layer="21">LED</text>
 <text x="11.049" y="9.017" size="0.4064" layer="21" rot="R90">+5V?</text>
 <text x="16.891" y="8.763" size="0.4064" layer="21" rot="R90">RELAY?</text>
-<text x="30.353" y="15.748" size="0.6096" layer="22" rot="MR0">*RA2_1k</text>
+<text x="30.353" y="15.748" size="0.6096" layer="22" rot="MR0">*RA3_1k</text>
 <text x="30.226" y="12.7" size="0.6096" layer="22" rot="MR0">*RA4_1k</text>
 <text x="28.067" y="8.382" size="0.6096" layer="21">*RB3</text>
 <text x="27.94" y="10.922" size="0.6096" layer="21">TX</text>
@@ -2273,7 +2273,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="PIEZO" library="adafruit" package="AL60P" value="PIEZO" x="18.034" y="19.304" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.955" y="23.749" size="1.27" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="R17" library="resistor" package="R1206" value="500" x="17.145" y="16.383" smashed="yes" rot="MR180"/>
+<element name="R17" library="resistor" package="R1206" value="500" x="15.875" y="16.51" smashed="yes" rot="MR180"/>
 <element name="RED" library="adafruit" package="LED5MM" value="RED" x="7.62" y="20.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.3058" y="24.5618" size="0.6096" layer="25" ratio="10" rot="R180"/>
 </element>
@@ -2478,7 +2478,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="36.83" y="22.352" extent="1-16" drill="0.6"/>
 <via x="56.896" y="15.24" extent="1-16" drill="0.6"/>
 <via x="38.989" y="13.462" extent="1-16" drill="0.6"/>
-<via x="13.716" y="22.479" extent="1-16" drill="0.6"/>
+<via x="14.478" y="22.733" extent="1-16" drill="0.6"/>
 <via x="24.511" y="22.86" extent="1-16" drill="0.6"/>
 <via x="24.511" y="21.463" extent="1-16" drill="0.6"/>
 <via x="24.511" y="20.066" extent="1-16" drill="0.6"/>
@@ -2696,8 +2696,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.486" y1="6.514" x2="17.486" y2="16.47" width="1.27" layer="1"/>
 <wire x1="17.486" y1="16.47" x2="19.812" y2="19.304" width="1.27" layer="1" curve="-90"/>
 <wire x1="19.812" y1="19.304" x2="21.7932" y2="19.304" width="1.27" layer="1"/>
-<wire x1="18.567" y1="16.383" x2="18.8722" y2="16.383" width="1.016" layer="16"/>
-<wire x1="18.8722" y1="16.383" x2="21.7932" y2="19.304" width="1.016" layer="16" curve="90"/>
+<wire x1="21.844" y1="19.304" x2="21.7932" y2="19.304" width="1.27" layer="16"/>
+<wire x1="17.297" y1="16.51" x2="19.05" y2="16.51" width="1.016" layer="16"/>
+<wire x1="19.05" y1="16.51" x2="21.844" y2="19.304" width="1.016" layer="16" curve="90"/>
 </signal>
 <signal name="VDD">
 <contactref element="4" pad="1"/>
@@ -2780,6 +2781,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="SJ3" pad="3"/>
 <wire x1="12.192" y1="9.652" x2="7.366" y2="9.652" width="1.016" layer="1"/>
 <wire x1="7.366" y1="9.652" x2="7.366" y2="9.398" width="0.8128" layer="1"/>
+<wire x1="44.45" y1="2.286" x2="44.45" y2="1.397" width="1.9304" layer="16"/>
+<wire x1="44.4246" y1="2.3876" x2="44.45" y2="2.3876" width="0.4064" layer="16"/>
+<wire x1="44.45" y1="2.3876" x2="44.45" y2="2.286" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$40">
 <contactref element="LED" pad="A"/>
@@ -2896,9 +2900,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="Q2" pad="3"/>
 <contactref element="12" pad="1"/>
 <wire x1="16.612" y1="9.398" x2="16.612" y2="11.303" width="0.8128" layer="16"/>
-<wire x1="16.612" y1="11.303" x2="15.875" y2="11.303" width="0.8128" layer="16"/>
-<wire x1="15.875" y1="11.303" x2="15.875" y2="12.573" width="0.8128" layer="16"/>
-<wire x1="15.875" y1="12.573" x2="16.891" y2="12.573" width="0.8128" layer="16"/>
+<wire x1="16.612" y1="11.303" x2="16.256" y2="11.303" width="0.8128" layer="16"/>
+<wire x1="16.256" y1="11.303" x2="16.256" y2="12.573" width="0.8128" layer="16"/>
+<wire x1="16.256" y1="12.573" x2="16.891" y2="12.573" width="0.8128" layer="16"/>
 <wire x1="16.934" y1="12.573" x2="16.891" y2="12.573" width="1.016" layer="16"/>
 </signal>
 <signal name="N$12">
