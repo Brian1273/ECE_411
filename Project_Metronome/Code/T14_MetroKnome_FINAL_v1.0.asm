@@ -19,24 +19,24 @@
 		__CONFIG _FOSC_LP & _WDTE_OFF & _PWRTE_OFF & _MCLRE_OFF & _BOREN_OFF & _LVP_OFF & _CPD_OFF & _CP_OFF
 ;================================================================================
 ; DECLARATIONS cpu equates (memory map)
-TMR0	EQU	0x01	; Timer0 Module Register
-porta	EQU	0x05	; assigns the memory location of register PORTA to porta for use in code 
-PORTA	EQU	0x05	; literals assigned with EQU cannot be changed elswhere in code
-PORTB	EQU	0x06	; creates an un-changable pointer and allows use of lower case porta
-portb	EQU	0x06	; allows use of lower case PORTB
-state	EQU	0x21	; stores current lighting state
-tic_rt	EQU	0xFC	; variable for tic rate. ~10ms
-work	EQU	0x23	; interrupt service temporarilly stores working register here
-stat	EQU	0x24	; interrupt service temporarilly stores status register here
-oldstate    EQU 0x25	; register to store encoder prior state
-newstate    EQU 0x26	; register to store register current state
-rate	EQU 0x27	; register to store encoder rate to pass to timer
-w_temp  EQU     0x71        ; variable used for context saving 
+TMR0	EQU	0x01		; Timer0 Module Register
+porta	EQU	0x05		; assigns the memory location of register PORTA to porta for use in code 
+PORTA	EQU	0x05		; literals assigned with EQU cannot be changed elswhere in code
+PORTB	EQU	0x06		; creates an un-changable pointer and allows use of lower case porta
+portb	EQU	0x06		; allows use of lower case PORTB
+state	EQU	0x21		; stores current lighting state
+tic_rt	EQU	0xFC		; variable for tic rate. ~10ms
+work	EQU	0x23		; interrupt service temporarilly stores working register here
+stat	EQU	0x24		; interrupt service temporarilly stores status register here
+oldstate    EQU 0x25		; register to store encoder prior state
+newstate    EQU 0x26		; register to store register current state
+rate	EQU 0x27		; register to store encoder rate to pass to timer
+w_temp  EQU     0x71        	; variable used for context saving 
 status_temp EQU     0x72        ; variable used for context saving
 pclath_temp EQU     0x73        ; variable used for context saving
 ; DECLARATIONS bit equates
-w	EQU 0		; allows for use of "w" =working register instead of zero for the destination
-f	EQU 1		; allows for use of "f" =file instead of one for the destination
+w	EQU 0			; allows for use of "w" =working register instead of zero for the destination
+f	EQU 1			; allows for use of "f" =file instead of one for the destination
 ;()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
 ;()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
 ; START
@@ -66,21 +66,21 @@ intserv
 ;---------------------------------------------------------
 	
 	;Push registers to store current state before interrupt
-		movwf   w_temp            	; save off current W register contents
-		movf	STATUS,w          	; move status register into W register
-		movwf	status_temp       	; save off contents of STATUS register
-		movf	PCLATH,w          	; move pclath register into W register
-		movwf	pclath_temp       	; save off contents of PCLATH register
+		movwf   w_temp            		; save off current W register contents
+		movf	STATUS,w          		; move status register into W register
+		movwf	status_temp       		; save off contents of STATUS register
+		movf	PCLATH,w          		; move pclath register into W register
+		movwf	pclath_temp       		; save off contents of PCLATH register
 	;Check Timer
-		BTFSC	INTCON, 2		; Timer0 interrupt flag
+		BTFSC	INTCON, 2			; Timer0 interrupt flag
 		GOTO 	timer_svc	
 	;Check Button(PORTB:0)
-		BTFSC	INTCON,	1		; RB0 Interrupt flag			
+		BTFSC	INTCON,	1			; RB0 Interrupt flag			
 		GOTO	button_svc
 	;Check Encoder(PORTB:(4:5))
-		BTFSC	INTCON,	0		; PORTB Interrupt flag
+		BTFSC	INTCON,	0			; PORTB Interrupt flag
 		GOTO	encoder_svc
-		GOTO	intexit			; Must be a glitch get out and hope nobody noticed
+		GOTO	intexit				; Must be a glitch get out and hope nobody noticed
 ;---------------------------------------------------------	
 timer_svc
 		
@@ -144,14 +144,14 @@ initializer
 		CLRWDT	
 	;OPTION REGISTER(81h)	
 		BSF	STATUS, 5		; BANK1
-		BCF	OPTION_REG, 7	; PORTB PULL-UPS ENABLED
-		BSF	OPTION_REG, 6	; INTERRUPT ON RISING EDGE
-		BCF	OPTION_REG, 5	; TIMER0 CLOCK SOURCE IS INTERNAL
-		BCF	OPTION_REG, 4	; UNUSED WHEN INTERNAL CLOCK SOURCE BUT SET 0 FOR LOW-HIGH TRANSITION	
-		BCF	OPTION_REG, 3	; PRESCALER IS ASSIGNED TO TIMER0 NOT WDT	
-		BSF	OPTION_REG, 2	; PS:2 PRESCALER RATE BITS<2:0>. USING 128<1,1,0> FOR PRESCALER
-		BSF	OPTION_REG, 1	; PS:1
-		BCF	OPTION_REG, 0	; PS:0
+		BCF	OPTION_REG, 7		; PORTB PULL-UPS ENABLED
+		BSF	OPTION_REG, 6		; INTERRUPT ON RISING EDGE
+		BCF	OPTION_REG, 5		; TIMER0 CLOCK SOURCE IS INTERNAL
+		BCF	OPTION_REG, 4		; UNUSED WHEN INTERNAL CLOCK SOURCE BUT SET 0 FOR LOW-HIGH TRANSITION	
+		BCF	OPTION_REG, 3		; PRESCALER IS ASSIGNED TO TIMER0 NOT WDT	
+		BSF	OPTION_REG, 2		; PS:2 PRESCALER RATE BITS<2:0>. USING 128<1,1,0> FOR PRESCALER
+		BSF	OPTION_REG, 1		; PS:1
+		BCF	OPTION_REG, 0		; PS:0
 		BCF	STATUS, 5		;RETURN TO BANK 0
 	; INTERRUPT CONTROL REGISTER
 		BCF	INTCON, 2		;(T0IF) TIMER0 INTERRUPT FLAG CLEARED
@@ -175,8 +175,8 @@ initializer
 ; * Prescaler is 1
 ; * Uses TIMER2 and CCP to create PWM 
 ;		PR2 	= 	0b00000001 ;		; Timer2 preset
-;		T2CON 	= 	0b00000100 ;	; Sets timer2 prescale and enables timer2
-;		CCPR1L 	= 	0b00000001 ;	; Sets Duty Cycle
+;		T2CON 	= 	0b00000100 ;		; Sets timer2 prescale and enables timer2
+;		CCPR1L 	= 	0b00000001 ;		; Sets Duty Cycle
 ;		CCP1CON = 	0b00111100 ;
 ;_________________________________________________________________
 	; PR2						; TIMER2 PERIOD REGISTER IN BANK1
@@ -214,7 +214,7 @@ initializer
 ;IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 
-	RETURN						;END OF INITIALIZER
+	RETURN					;END OF INITIALIZER
 
 ;********************************************************************
 ;********************************************************************
