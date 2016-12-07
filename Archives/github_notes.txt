@@ -1,0 +1,10 @@
+After cloning repository (to remote desktop) and launching power shell (if windows based OS):
+
+From power shell:
+
+1.  move file to new location (mv)
+2.  git add <new location>
+3.  git rm <old location>
+4.  git commit -m "comments"
+5.  git status // last chance to make sure you got everything squared away
+6.  git push
